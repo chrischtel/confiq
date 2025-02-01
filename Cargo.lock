@@ -514,7 +514,7 @@ dependencies = [
 
 [[package]]
 name = "confiq"
-version = "0.1.1"
+version = "0.1.2-beta.1"
 dependencies = [
  "async-trait",
  "aws-config",

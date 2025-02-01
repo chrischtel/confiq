@@ -1,6 +1,6 @@
 [package]
 name = "confiq"
-version = "0.1.1"
+version = "0.1.2-beta.1"
 edition = "2021"
 description = "A modern, type-safe configuration management library for Rust"
 authors = ["Christian Brendlin <christian@brendlinonline.de>"]
