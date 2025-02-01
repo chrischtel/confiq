@@ -1,0 +1,12 @@
+pre-release-replacements = [
+    # Replace the word "Unreleased" in the header with the new version.
+    { file = "CHANGELOG.md", search = "Unreleased", replace = "[{{version}}]" },
+    # Replace the placeholder "ReleaseDate" within the unreleased section with the actual date.
+    { file = "CHANGELOG.md", search = "ReleaseDate", replace = "{{date}}" },
+    # Append a new header for future changes by looking for the marker comment.
+    { file = "CHANGELOG.md", search = "<!-- next-header -->", replace = "<!-- next-header -->\\n\\n## [Unreleased] - ReleaseDate", exactly = 1 },
+
+    # Optionally update URL references (if you use these for comparing versions).
+    { file = "CHANGELOG.md", search = "<!-- next-url -->", replace = "<!-- next-url -->\\n[Unreleased]: https://github.com/chrischtel/confiq/compare/{{tag_name}}...HEAD", exactly = 1 },
+
+]

@@ -11,6 +11,9 @@ readme = "README.md"
 keywords = ["config", "configuration", "settings", "env", "yaml"]
 categories = ["config", "parsing"]
 
+[release]
+changelog = "CHANGELOG.md"
+
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 thiserror = "1.0"
