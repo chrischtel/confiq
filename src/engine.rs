@@ -151,7 +151,7 @@ mod tests {
         };
 
         let engine = ConfigEngine::new(initial_config);
-        let mut watch_stream = engine.watch().await;
+        let watch_stream = engine.watch().await;
 
         // Pin the stream so that it is Unpin.
         let mut pinned_stream = Box::pin(watch_stream);
