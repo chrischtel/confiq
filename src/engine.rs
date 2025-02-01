@@ -1,6 +1,6 @@
 use crate::error::{ConfigError, Result};
 use crate::source::ConfigSource;
-use futures::{Stream, StreamExt};
+use futures::Stream;
 use serde::de::DeserializeOwned;
 use std::sync::Arc;
 use tokio::sync::mpsc;
