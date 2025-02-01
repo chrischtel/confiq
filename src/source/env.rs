@@ -1,5 +1,5 @@
 use super::ConfigSource;
-use crate::error::{ConfigError, Result};
+use crate::error::Result;
 use async_trait::async_trait;
 use serde_json::Value;
 use std::env;

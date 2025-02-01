@@ -5,16 +5,16 @@ use std::path::PathBuf;
 
 #[derive(Debug, Deserialize, Clone)]
 struct AppConfig {
-    database_url: String,
-    port: u16,
+    _database_url: String,
+    _port: u16,
 }
 
 #[tokio::main(flavor = "current_thread")]
 async fn main() -> Result<()> {
     // Create an initial config.
     let initial = AppConfig {
-        database_url: "postgres://localhost/db".to_string(),
-        port: 8080,
+        _database_url: "postgres://localhost/db".to_string(),
+        _port: 8080,
     };
 
     // Bind the engine to a variable and then add sources.
